@@ -1,4 +1,4 @@
-import makeAlly from '/home/makeAlly.js';
+import { makeAlly } from '../home/makeAlly.js';
 const test = QUnit.test;
 
 QUnit.module('make ally character');
@@ -10,8 +10,9 @@ test('create ally object from form data', (assert) => {
 
     const expected = {
         animal: 'raccoon',
-        hp: 35,
-        gold: 0,
+        name: null,
+        wp: 35,
+        sc: 20,
         completed: {}
     };
 

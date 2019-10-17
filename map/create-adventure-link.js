@@ -7,3 +7,4 @@ function createAdventureLink(adventure) {
     link.textContent = adventure.title;
     return link;
 }
+export default createAdventureLink;
