@@ -1,3 +1,3 @@
-import '../common/find-by-id.js';
-import '../common/game-over.js';
-import '../load-profile.js';
+import '/test/find-by-id.test.js';
+import '/test/game-over.test.js';
+import '/test/load-profile.test.js';

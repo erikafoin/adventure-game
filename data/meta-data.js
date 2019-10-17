@@ -1,4 +1,4 @@
-const quest = [misogyny, gender, racism], 
+const adventure = [misogyny, gender, racism], 
 
 const misogyny = {
     id: 'misogyny',
@@ -16,24 +16,24 @@ const misogyny = {
         id: 'smile',
         description: 'Smile and Nod',
         result: `
-            Knowing that you need to safe-guard yourself, you avoid confrontation and smile and nod during his explaination.`,
-        scpoints: 20,
-        wokepoints: 0
+            Knowing that you need to safe-guard yourself, you avoid confrontation and smile and nod during his explanation.`,
+        sc: 20,
+        wp: 0
     }, {
         id: 'fight',
         description: 'Fiiiiiggghhhttt!',
         result: `
             Brandishing your word sword you let out a scream and smack the water cup out his hand and you declare your expertise in the subject.`,
-        scpoints: -20,
-        wokepoints: 10
+        sc: -20,
+        wp: 10
     }, {
         id: 'interject',
         description: 'Stand your ground politely',
         result: `
             First you listen, and then interject into the conversation with your expert opinion, and possibly your credentials. 
         `,
-        scpoints: -10,
-        wokepoints: 50
+        sc: -10,
+        wp: 50
     }]
 };
 const gender = {
@@ -53,28 +53,28 @@ const gender = {
         id: 'correct',
         description: 'You notice your mistake and say the correct pronoun',
         result: 'Good job. You took accountability but moved on',
-        scpoints: 5,
-        wokepoints: 50
+        sc: 5,
+        wp: 50
     }, {
         id: 'nothing',
         description: 'You do nothing by ignoring it ever happened',
         result: 'Oh no! You chose silence, which only benifits the oppressor',
-        scpoints: 0,
-        wokepoints: -50
+        sc: 0,
+        wp: -50
     }, {
         id: 'sorry',
         description: 'You say sorry, and profusely apologize',
         result: 'Oh no, you tried, but you made it about you forcing your coworker to do the emotional labor of consoling you',
-        scpoints: -20,
-        wokepoints: 0
+        sc: -20,
+        wp: 0
     }]
 };
 const racism = {
     id: 'racism',
     title: 'Racism',
     map: {
-        top: '31%',
-        left: '5%'
+        top: '5%',
+        left: '20%'
     },
     image: '.png',
     audio: '.wav',
@@ -86,21 +86,21 @@ const racism = {
         id: 'blind',
         description: 'You notice your implicit bias is getting in the way, so you as the recruiters to give you blind resumes with blacked out information. ',
         result: 'Good job. You know a white male ex felon statistaclly has a harder time getting callbacked for interviews as a highschool educated black man',
-        scpoints: 10,
-        wokepoints: 30
+        sc: 10,
+        wp: 30
     }, {
         id: 'blame',
         description: 'You do nothing about getting different candidates for your engineering team, but convince your hr coworker to hire a black receptionist',
         result: 'Oh no! You chose to do token diversity!',
-        scpoints: 0,
-        wokepoints: -50
+        sc: 0,
+        wp: -50
     }, {
         id: 'recruit',
         description: 'You start recruiting at Historically Black Colleges',
         result: 'Good job, you know that your hiring process has a bottleneck that does not encourage minorities to apply. Unfortunately, your boss does not agree, so you have to do all the traveling yourself',
-        scpoints: -20,
-        wokepoints: 50
+        sc: -20,
+        wp: 50
     }]
 };
 
-export default quests; 
+export default adventure; 

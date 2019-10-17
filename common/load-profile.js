@@ -1,5 +1,5 @@
-// import { getAlly } from '../data/api.js';
-import gameOver from './game-over.js';
+import { getAlly } from '../data/api.js';
+import gameOver from '/common/game-over.js';
 
 function loadProfile() {
     const name = document.getElementById('name');
@@ -14,7 +14,7 @@ function loadProfile() {
     }
 
     name.textContent = ally.name;
-    avatar.src = '../assets/avatars/' + ally.race + '.png';
+    avatar.src = '../assets/avatars/' + ally.animal + '.png';
     sc.textContent = ally.sc;
 
     if (gameOver(ally)) {
