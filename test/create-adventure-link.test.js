@@ -1,7 +1,7 @@
-import createCompletedAdventure from '/map/create-completed-adventure.js';
+import createAdventureLink from '/map/create-adventure-link.js';
 const test = QUnit.test;
 
-QUnit.module('create completed adventure');
+QUnit.module('create adventure link');
 
 test('creates correct html', (assert) => {
     // arrange
@@ -14,10 +14,10 @@ test('creates correct html', (assert) => {
         }
     };
 
-    const expected = '<span class="adventure completed" style="top: 89%; left: 44%;">Sexism</span>';
+    const expected = '<a class="adventure" href="../adventure/?id=misogyny" style="top: 89%; left: 44%;">Sexism</a>';
 
     // act
-    const dom = createCompletedAdventure(adventure);
+    const dom = createAdventureLink(adventure);
 
     // assert
     assert.equal(dom.outerHTML, expected);
