@@ -1,7 +1,7 @@
-import getAlly from '/common/load-profile.js';
+import makeAlly from '/home/makeAlly.js';
 const test = QUnit.test;
 
-QUnit.module('make ally');
+QUnit.module('make ally character');
 
 test('create ally object from form data', (assert) => {
     // arrange
@@ -16,7 +16,7 @@ test('create ally object from form data', (assert) => {
     };
 
     // act
-    const ally = getAlly(formData);
+    const ally = makeAlly(formData);
 
     // assert
     assert.deepEqual(ally, expected);
