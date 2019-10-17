@@ -1,4 +1,4 @@
-import { getUser } from '../data/api.js';
+// import { getAlly } from '../data/api.js';
 import gameOver from './game-over.js';
 
 function loadProfile() {
@@ -7,21 +7,22 @@ function loadProfile() {
     const wp = document.getElementById('wp');
     const sc = document.getElementById('sc');
 
-    const user = getUser();
+    const ally = getAlly();
 
-    if (!user) {
+    if (!ally) {
         window.location = './index.html';
     }
 
-    name.textContent = user.name;
-    avatar.src = '../assets/avatars/' + user.race + '.png';
-    sc.textContent = user.sc;
+    name.textContent = ally.name;
+    avatar.src = '../assets/avatars/' + ally.race + '.png';
+    sc.textContent = ally.sc;
 
-    if (gameOver(user)) {
+    if (gameOver(ally)) {
         wp.textContent = 'Better Try Again, my friend';
     }
     else {
-        wp.textContent = user.wp;
+
+        wp.textContent = ally.wp;
     }
 
 }

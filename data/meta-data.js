@@ -1,4 +1,4 @@
-// const quest = [misogyny, gender, racism], 
+const quest = [misogyny, gender, racism], 
 
 const misogyny = {
     id: 'misogyny',
